@@ -1,0 +1,80 @@
+[2024-05-13 03:08:01,943] torch.distributed.run: [WARNING] 
+[2024-05-13 03:08:01,943] torch.distributed.run: [WARNING] *****************************************
+[2024-05-13 03:08:01,943] torch.distributed.run: [WARNING] Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+[2024-05-13 03:08:01,943] torch.distributed.run: [WARNING] *****************************************
+Using the `WANDB_DISABLED` environment variable is deprecated and will be removed in v5. Use the --report_to flag to control the integrations used for logging result (for instance --report_to none).
+Traceback (most recent call last):
+  File "/projects/p32301/DNABERT/DNABERT-2/run_mlm_debug.py", line 710, in <module>
+    main()
+  File "/projects/p32301/DNABERT/DNABERT-2/run_mlm_debug.py", line 270, in main
+    model_args, data_args, training_args = parser.parse_args_into_dataclasses()
+                                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/projects/p32301/DNABERT/gcc9_env/lib/python3.11/site-packages/transformers/hf_argparser.py", line 347, in parse_args_into_dataclasses
+    raise ValueError(f"Some specified arguments are not used by the HfArgumentParser: {remaining_args}")
+ValueError: Some specified arguments are not used by the HfArgumentParser: ['zhihan1996/DNABERT-2-117M', '--dataloader_shuffle', 'False']
+Using the `WANDB_DISABLED` environment variable is deprecated and will be removed in v5. Use the --report_to flag to control the integrations used for logging result (for instance --report_to none).
+Traceback (most recent call last):
+  File "/projects/p32301/DNABERT/DNABERT-2/run_mlm_debug.py", line 710, in <module>
+    main()
+  File "/projects/p32301/DNABERT/DNABERT-2/run_mlm_debug.py", line 270, in main
+    model_args, data_args, training_args = parser.parse_args_into_dataclasses()
+                                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/projects/p32301/DNABERT/gcc9_env/lib/python3.11/site-packages/transformers/hf_argparser.py", line 347, in parse_args_into_dataclasses
+    raise ValueError(f"Some specified arguments are not used by the HfArgumentParser: {remaining_args}")
+ValueError: Some specified arguments are not used by the HfArgumentParser: ['zhihan1996/DNABERT-2-117M', '--dataloader_shuffle', 'False']
+Using the `WANDB_DISABLED` environment variable is deprecated and will be removed in v5. Use the --report_to flag to control the integrations used for logging result (for instance --report_to none).
+Traceback (most recent call last):
+  File "/projects/p32301/DNABERT/DNABERT-2/run_mlm_debug.py", line 710, in <module>
+    main()
+  File "/projects/p32301/DNABERT/DNABERT-2/run_mlm_debug.py", line 270, in main
+    model_args, data_args, training_args = parser.parse_args_into_dataclasses()
+                                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/projects/p32301/DNABERT/gcc9_env/lib/python3.11/site-packages/transformers/hf_argparser.py", line 347, in parse_args_into_dataclasses
+    raise ValueError(f"Some specified arguments are not used by the HfArgumentParser: {remaining_args}")
+ValueError: Some specified arguments are not used by the HfArgumentParser: ['zhihan1996/DNABERT-2-117M', '--dataloader_shuffle', 'False']
+Using the `WANDB_DISABLED` environment variable is deprecated and will be removed in v5. Use the --report_to flag to control the integrations used for logging result (for instance --report_to none).
+Traceback (most recent call last):
+  File "/projects/p32301/DNABERT/DNABERT-2/run_mlm_debug.py", line 710, in <module>
+    main()
+  File "/projects/p32301/DNABERT/DNABERT-2/run_mlm_debug.py", line 270, in main
+    model_args, data_args, training_args = parser.parse_args_into_dataclasses()
+                                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/projects/p32301/DNABERT/gcc9_env/lib/python3.11/site-packages/transformers/hf_argparser.py", line 347, in parse_args_into_dataclasses
+    raise ValueError(f"Some specified arguments are not used by the HfArgumentParser: {remaining_args}")
+ValueError: Some specified arguments are not used by the HfArgumentParser: ['zhihan1996/DNABERT-2-117M', '--dataloader_shuffle', 'False']
+[2024-05-13 03:08:51,980] torch.distributed.elastic.multiprocessing.api: [WARNING] Sending process 40978 closing signal SIGTERM
+[2024-05-13 03:08:51,981] torch.distributed.elastic.multiprocessing.api: [WARNING] Sending process 40979 closing signal SIGTERM
+[2024-05-13 03:08:51,981] torch.distributed.elastic.multiprocessing.api: [WARNING] Sending process 40980 closing signal SIGTERM
+[2024-05-13 03:08:52,759] torch.distributed.elastic.multiprocessing.api: [ERROR] failed (exitcode: 1) local_rank: 0 (pid: 40977) of binary: /projects/p32301/DNABERT/gcc9_env/bin/python
+Traceback (most recent call last):
+  File "/projects/p32301/DNABERT/gcc9_env/bin/torchrun", line 8, in <module>
+    sys.exit(main())
+             ^^^^^^
+  File "/projects/p32301/DNABERT/gcc9_env/lib/python3.11/site-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 347, in wrapper
+    return f(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^
+  File "/projects/p32301/DNABERT/gcc9_env/lib/python3.11/site-packages/torch/distributed/run.py", line 812, in main
+    run(args)
+  File "/projects/p32301/DNABERT/gcc9_env/lib/python3.11/site-packages/torch/distributed/run.py", line 803, in run
+    elastic_launch(
+  File "/projects/p32301/DNABERT/gcc9_env/lib/python3.11/site-packages/torch/distributed/launcher/api.py", line 135, in __call__
+    return launch_agent(self._config, self._entrypoint, list(args))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/projects/p32301/DNABERT/gcc9_env/lib/python3.11/site-packages/torch/distributed/launcher/api.py", line 268, in launch_agent
+    raise ChildFailedError(
+torch.distributed.elastic.multiprocessing.errors.ChildFailedError: 
+============================================================
+run_mlm_debug.py FAILED
+------------------------------------------------------------
+Failures:
+  <NO_OTHER_FAILURES>
+------------------------------------------------------------
+Root Cause (first observed failure):
+[0]:
+  time      : 2024-05-13_03:08:51
+  host      : qgpu2012.quest.it.northwestern.edu
+  rank      : 0 (local_rank: 0)
+  exitcode  : 1 (pid: 40977)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+============================================================

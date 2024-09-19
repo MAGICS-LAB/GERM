@@ -1,0 +1,215 @@
+(/projects/p32301/DNABERT/gcc9_env) torchrun --nproc_per_node=1 run_mlm_debug.py \
+>   --config_name "/projects/p32301/DNABERT/DNABERT-2/config.json" \
+>   --train_file "/projects/p32301/DNABERT/data/dnabert_2_pretrain/train.txt" \
+>   --validation_file "/projects/p32301/DNABERT/data/dnabert_2_pretrain/dev.txt" \
+>   --per_device_train_batch_size 512 \
+>   --per_device_eval_batch_size 512 \
+>   --do_train \
+>   --do_eval \
+>   --output_dir "/projects/p32301/DNABERT/models/dnabert2_pretrain_debug" \
+>   --trust_remote_code=True \
+>   --tokenizer_name "zhihan1996/DNABERT-2-117M" \
+>   --gradient_accumulation_steps 1 \
+>   --max_seq_length 128 \
+>   --save_total_limit 20 \
+>   --weight_decay 1e-05 \
+>   --adam_beta2 0.95 \
+>   --learning_rate 4e-04 \
+>   --logging_steps 1 \
+>   --max_steps 200000 \
+>   --eval_steps 5000 \
+>   --save_steps 1000 \
+>   --warmup_ratio 0.05 \
+>   --preprocessing_num_workers 24 \
+>   --evaluation_strategy "steps" 
+Using the `WANDB_DISABLED` environment variable is deprecated and will be removed in v5. Use the --report_to flag to control the integrations used for logging result (for instance --report_to none).
+05/13/2024 23:52:45 - WARNING - __main__ - Process rank: 0, device: cuda, n_gpu: 1, distributed training: True, 16-bits training: False
+05/13/2024 23:52:45 - INFO - __main__ - Training/evaluation parameters TrainingArguments(
+_n_gpu=1,
+accelerator_config={'split_batches': False, 'dispatch_batches': None, 'even_batches': True, 'use_seedable_sampler': True},
+adafactor=False,
+adam_beta1=0.9,
+adam_beta2=0.95,
+adam_epsilon=1e-08,
+auto_find_batch_size=False,
+bf16=False,
+bf16_full_eval=False,
+data_seed=None,
+dataloader_drop_last=False,
+dataloader_num_workers=0,
+dataloader_persistent_workers=False,
+dataloader_pin_memory=True,
+dataloader_prefetch_factor=None,
+ddp_backend=None,
+ddp_broadcast_buffers=None,
+ddp_bucket_cap_mb=None,
+ddp_find_unused_parameters=None,
+ddp_timeout=1800,
+debug=[],
+deepspeed=None,
+disable_tqdm=False,
+dispatch_batches=None,
+do_eval=True,
+do_predict=False,
+do_train=True,
+eval_accumulation_steps=None,
+eval_delay=0,
+eval_steps=5000,
+evaluation_strategy=IntervalStrategy.STEPS,
+fp16=False,
+fp16_backend=auto,
+fp16_full_eval=False,
+fp16_opt_level=O1,
+fsdp=[],
+fsdp_config={'min_num_params': 0, 'xla': False, 'xla_fsdp_v2': False, 'xla_fsdp_grad_ckpt': False},
+fsdp_min_num_params=0,
+fsdp_transformer_layer_cls_to_wrap=None,
+full_determinism=False,
+gradient_accumulation_steps=1,
+gradient_checkpointing=False,
+gradient_checkpointing_kwargs=None,
+greater_is_better=None,
+group_by_length=False,
+half_precision_backend=auto,
+hub_always_push=False,
+hub_model_id=None,
+hub_private_repo=False,
+hub_strategy=HubStrategy.EVERY_SAVE,
+hub_token=<HUB_TOKEN>,
+ignore_data_skip=False,
+include_inputs_for_metrics=False,
+include_num_input_tokens_seen=False,
+include_tokens_per_second=False,
+jit_mode_eval=False,
+label_names=None,
+label_smoothing_factor=0.0,
+learning_rate=0.0004,
+length_column_name=length,
+load_best_model_at_end=False,
+local_rank=0,
+log_level=passive,
+log_level_replica=warning,
+log_on_each_node=True,
+logging_dir=/projects/p32301/DNABERT/models/dnabert2_pretrain_debug/runs/May13_23-52-44_qgpu2001,
+logging_first_step=False,
+logging_nan_inf_filter=True,
+logging_steps=1.0,
+logging_strategy=IntervalStrategy.STEPS,
+lr_scheduler_kwargs={},
+lr_scheduler_type=SchedulerType.LINEAR,
+max_grad_norm=1.0,
+max_steps=200000,
+metric_for_best_model=None,
+mp_parameters=,
+neftune_noise_alpha=None,
+no_cuda=False,
+num_train_epochs=3.0,
+optim=OptimizerNames.ADAMW_TORCH,
+optim_args=None,
+optim_target_modules=None,
+output_dir=/projects/p32301/DNABERT/models/dnabert2_pretrain_debug,
+overwrite_output_dir=False,
+past_index=-1,
+per_device_eval_batch_size=512,
+per_device_train_batch_size=512,
+prediction_loss_only=False,
+push_to_hub=False,
+push_to_hub_model_id=None,
+push_to_hub_organization=None,
+push_to_hub_token=<PUSH_TO_HUB_TOKEN>,
+ray_scope=last,
+remove_unused_columns=True,
+report_to=[],
+resume_from_checkpoint=None,
+run_name=/projects/p32301/DNABERT/models/dnabert2_pretrain_debug,
+save_on_each_node=False,
+save_only_model=False,
+save_safetensors=True,
+save_steps=1000,
+save_strategy=IntervalStrategy.STEPS,
+save_total_limit=20,
+seed=42,
+skip_memory_metrics=True,
+split_batches=None,
+tf32=None,
+torch_compile=False,
+torch_compile_backend=None,
+torch_compile_mode=None,
+torchdynamo=None,
+tpu_metrics_debug=False,
+tpu_num_cores=None,
+use_cpu=False,
+use_ipex=False,
+use_legacy_prediction_loop=False,
+use_mps_device=False,
+warmup_ratio=0.05,
+warmup_steps=0,
+weight_decay=1e-05,
+)
+Using custom data configuration default-d4501b9ae2e674eb
+05/13/2024 23:52:46 - INFO - datasets.builder - Using custom data configuration default-d4501b9ae2e674eb
+Loading Dataset Infos from /projects/p32301/DNABERT/gcc9_env/lib/python3.11/site-packages/datasets/packaged_modules/text
+05/13/2024 23:52:46 - INFO - datasets.info - Loading Dataset Infos from /projects/p32301/DNABERT/gcc9_env/lib/python3.11/site-packages/datasets/packaged_modules/text
+Overwrite dataset info from restored data version if exists.
+05/13/2024 23:52:46 - INFO - datasets.builder - Overwrite dataset info from restored data version if exists.
+Loading Dataset info from /home/ysj6764/.cache/huggingface/datasets/text/default-d4501b9ae2e674eb/0.0.0/c4a140d10f020282918b5dd1b8a49f0104729c6177f60a6b49ec2a365ec69f34
+05/13/2024 23:52:46 - INFO - datasets.info - Loading Dataset info from /home/ysj6764/.cache/huggingface/datasets/text/default-d4501b9ae2e674eb/0.0.0/c4a140d10f020282918b5dd1b8a49f0104729c6177f60a6b49ec2a365ec69f34
+Found cached dataset text (/home/ysj6764/.cache/huggingface/datasets/text/default-d4501b9ae2e674eb/0.0.0/c4a140d10f020282918b5dd1b8a49f0104729c6177f60a6b49ec2a365ec69f34)
+05/13/2024 23:52:46 - INFO - datasets.builder - Found cached dataset text (/home/ysj6764/.cache/huggingface/datasets/text/default-d4501b9ae2e674eb/0.0.0/c4a140d10f020282918b5dd1b8a49f0104729c6177f60a6b49ec2a365ec69f34)
+Loading Dataset info from /home/ysj6764/.cache/huggingface/datasets/text/default-d4501b9ae2e674eb/0.0.0/c4a140d10f020282918b5dd1b8a49f0104729c6177f60a6b49ec2a365ec69f34
+05/13/2024 23:52:46 - INFO - datasets.info - Loading Dataset info from /home/ysj6764/.cache/huggingface/datasets/text/default-d4501b9ae2e674eb/0.0.0/c4a140d10f020282918b5dd1b8a49f0104729c6177f60a6b49ec2a365ec69f34
+Loading dataset shards: 100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 65/65 [00:00<00:00, 188.66it/s]
+[INFO|configuration_utils.py:724] 2024-05-13 23:52:46,606 >> loading configuration file /projects/p32301/DNABERT/DNABERT-2/config.json
+Traceback (most recent call last):
+  File "/projects/p32301/DNABERT/DNABERT-2/run_mlm_debug.py", line 710, in <module>
+    main()
+  File "/projects/p32301/DNABERT/DNABERT-2/run_mlm_debug.py", line 413, in main
+    config = AutoConfig.from_pretrained(model_args.config_name, **config_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/projects/p32301/DNABERT/gcc9_env/lib/python3.11/site-packages/transformers/models/auto/configuration_auto.py", line 1147, in from_pretrained
+    config_class = get_class_from_dynamic_module(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/projects/p32301/DNABERT/gcc9_env/lib/python3.11/site-packages/transformers/dynamic_module_utils.py", line 489, in get_class_from_dynamic_module
+    final_module = get_cached_module_file(
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/projects/p32301/DNABERT/gcc9_env/lib/python3.11/site-packages/transformers/dynamic_module_utils.py", line 287, in get_cached_module_file
+    cached_module = try_to_load_from_cache(
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/projects/p32301/DNABERT/gcc9_env/lib/python3.11/site-packages/huggingface_hub/utils/_validators.py", line 111, in _inner_fn
+    validate_repo_id(arg_value)
+  File "/projects/p32301/DNABERT/gcc9_env/lib/python3.11/site-packages/huggingface_hub/utils/_validators.py", line 159, in validate_repo_id
+    raise HFValidationError(
+huggingface_hub.utils._validators.HFValidationError: Repo id must be in the form 'repo_name' or 'namespace/repo_name': '/projects/p32301/DNABERT/DNABERT-2/config.json'. Use `repo_type` argument if needed.
+[2024-05-13 23:52:51,327] torch.distributed.elastic.multiprocessing.api: [ERROR] failed (exitcode: 1) local_rank: 0 (pid: 6949) of binary: /projects/p32301/DNABERT/gcc9_env/bin/python
+Traceback (most recent call last):
+  File "/projects/p32301/DNABERT/gcc9_env/bin/torchrun", line 8, in <module>
+    sys.exit(main())
+             ^^^^^^
+  File "/projects/p32301/DNABERT/gcc9_env/lib/python3.11/site-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 347, in wrapper
+    return f(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^
+  File "/projects/p32301/DNABERT/gcc9_env/lib/python3.11/site-packages/torch/distributed/run.py", line 812, in main
+    run(args)
+  File "/projects/p32301/DNABERT/gcc9_env/lib/python3.11/site-packages/torch/distributed/run.py", line 803, in run
+    elastic_launch(
+  File "/projects/p32301/DNABERT/gcc9_env/lib/python3.11/site-packages/torch/distributed/launcher/api.py", line 135, in __call__
+    return launch_agent(self._config, self._entrypoint, list(args))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/projects/p32301/DNABERT/gcc9_env/lib/python3.11/site-packages/torch/distributed/launcher/api.py", line 268, in launch_agent
+    raise ChildFailedError(
+torch.distributed.elastic.multiprocessing.errors.ChildFailedError: 
+============================================================
+run_mlm_debug.py FAILED
+------------------------------------------------------------
+Failures:
+  <NO_OTHER_FAILURES>
+------------------------------------------------------------
+Root Cause (first observed failure):
+[0]:
+  time      : 2024-05-13_23:52:51
+  host      : qgpu2001.quest.it.northwestern.edu
+  rank      : 0 (local_rank: 0)
+  exitcode  : 1 (pid: 6949)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+============================================================

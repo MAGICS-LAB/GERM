@@ -1,0 +1,238 @@
+05/18/2024 12:09:07 - WARNING - __main__ - Process rank: 2, device: cpu:2, n_gpu: 1, distributed training: True, 16-bits training: False
+05/18/2024 12:09:07 - WARNING - __main__ - Process rank: 1, device: cpu:1, n_gpu: 1, distributed training: True, 16-bits training: False
+05/18/2024 12:09:07 - WARNING - __main__ - Process rank: 3, device: cpu:3, n_gpu: 1, distributed training: True, 16-bits training: False
+05/18/2024 12:09:07 - WARNING - __main__ - Process rank: 0, device: cpu:0, n_gpu: 1, distributed training: True, 16-bits training: False
+05/18/2024 12:09:07 - INFO - __main__ - Training/evaluation parameters TrainingArguments(
+_n_gpu=1,
+accelerator_config={'split_batches': False, 'dispatch_batches': None, 'even_batches': True, 'use_seedable_sampler': True},
+adafactor=False,
+adam_beta1=0.9,
+adam_beta2=0.95,
+adam_epsilon=1e-08,
+auto_find_batch_size=False,
+bf16=False,
+bf16_full_eval=False,
+data_seed=None,
+dataloader_drop_last=False,
+dataloader_num_workers=0,
+dataloader_persistent_workers=False,
+dataloader_pin_memory=True,
+dataloader_prefetch_factor=None,
+ddp_backend=None,
+ddp_broadcast_buffers=None,
+ddp_bucket_cap_mb=None,
+ddp_find_unused_parameters=None,
+ddp_timeout=1800,
+debug=[],
+deepspeed=None,
+disable_tqdm=False,
+dispatch_batches=None,
+do_eval=True,
+do_predict=False,
+do_train=True,
+eval_accumulation_steps=None,
+eval_delay=0,
+eval_steps=1000,
+evaluation_strategy=IntervalStrategy.STEPS,
+fp16=False,
+fp16_backend=auto,
+fp16_full_eval=False,
+fp16_opt_level=O1,
+fsdp=[],
+fsdp_config={'min_num_params': 0, 'xla': False, 'xla_fsdp_v2': False, 'xla_fsdp_grad_ckpt': False},
+fsdp_min_num_params=0,
+fsdp_transformer_layer_cls_to_wrap=None,
+full_determinism=False,
+gradient_accumulation_steps=1,
+gradient_checkpointing=False,
+gradient_checkpointing_kwargs=None,
+greater_is_better=None,
+group_by_length=False,
+half_precision_backend=auto,
+hub_always_push=False,
+hub_model_id=None,
+hub_private_repo=False,
+hub_strategy=HubStrategy.EVERY_SAVE,
+hub_token=<HUB_TOKEN>,
+ignore_data_skip=False,
+include_inputs_for_metrics=False,
+include_num_input_tokens_seen=False,
+include_tokens_per_second=False,
+jit_mode_eval=False,
+label_names=None,
+label_smoothing_factor=0.0,
+learning_rate=0.0004,
+length_column_name=length,
+load_best_model_at_end=False,
+local_rank=0,
+log_level=passive,
+log_level_replica=warning,
+log_on_each_node=True,
+logging_dir=/projects/p32301/DNABERT/models/dnabert2_pretrain_debug_200K/runs/May18_12-09-06_qgpu2013,
+logging_first_step=False,
+logging_nan_inf_filter=True,
+logging_steps=1.0,
+logging_strategy=IntervalStrategy.STEPS,
+lr_scheduler_kwargs={},
+lr_scheduler_type=SchedulerType.LINEAR,
+max_grad_norm=1.0,
+max_steps=200000,
+metric_for_best_model=None,
+mp_parameters=,
+neftune_noise_alpha=None,
+no_cuda=False,
+num_train_epochs=3.0,
+optim=OptimizerNames.ADAMW_TORCH,
+optim_args=None,
+optim_target_modules=None,
+output_dir=/projects/p32301/DNABERT/models/dnabert2_pretrain_debug_200K,
+overwrite_output_dir=False,
+past_index=-1,
+per_device_eval_batch_size=512,
+per_device_train_batch_size=512,
+prediction_loss_only=False,
+push_to_hub=False,
+push_to_hub_model_id=None,
+push_to_hub_organization=None,
+push_to_hub_token=<PUSH_TO_HUB_TOKEN>,
+ray_scope=last,
+remove_unused_columns=True,
+report_to=[],
+resume_from_checkpoint=None,
+run_name=/projects/p32301/DNABERT/models/dnabert2_pretrain_debug_200K,
+save_on_each_node=False,
+save_only_model=False,
+save_safetensors=True,
+save_steps=1000,
+save_strategy=IntervalStrategy.STEPS,
+save_total_limit=20,
+seed=42,
+skip_memory_metrics=True,
+split_batches=None,
+tf32=None,
+torch_compile=False,
+torch_compile_backend=None,
+torch_compile_mode=None,
+torchdynamo=None,
+tpu_metrics_debug=False,
+tpu_num_cores=None,
+use_cpu=False,
+use_ipex=False,
+use_legacy_prediction_loop=False,
+use_mps_device=False,
+warmup_ratio=0.05,
+warmup_steps=0,
+weight_decay=1e-05,
+)
+05/18/2024 12:09:07 - INFO - __main__ - Checkpoint detected, resuming training at /projects/p32301/DNABERT/models/dnabert2_pretrain_debug_200K/checkpoint-10000. To avoid this behavior, change the `--output_dir` or add `--overwrite_output_dir` to train from scratch.
+05/18/2024 12:09:07 - INFO - datasets.builder - Using custom data configuration default-d4501b9ae2e674eb
+05/18/2024 12:09:07 - INFO - datasets.info - Loading Dataset Infos from /projects/p32301/DNABERT/gcc9_env/lib/python3.11/site-packages/datasets/packaged_modules/text
+05/18/2024 12:09:07 - INFO - datasets.builder - Overwrite dataset info from restored data version if exists.
+05/18/2024 12:09:07 - INFO - datasets.info - Loading Dataset info from /home/ysj6764/.cache/huggingface/datasets/text/default-d4501b9ae2e674eb/0.0.0/c4a140d10f020282918b5dd1b8a49f0104729c6177f60a6b49ec2a365ec69f34
+05/18/2024 12:09:08 - INFO - datasets.builder - Found cached dataset text (/home/ysj6764/.cache/huggingface/datasets/text/default-d4501b9ae2e674eb/0.0.0/c4a140d10f020282918b5dd1b8a49f0104729c6177f60a6b49ec2a365ec69f34)
+05/18/2024 12:09:08 - INFO - datasets.info - Loading Dataset info from /home/ysj6764/.cache/huggingface/datasets/text/default-d4501b9ae2e674eb/0.0.0/c4a140d10f020282918b5dd1b8a49f0104729c6177f60a6b49ec2a365ec69f34
+05/18/2024 12:10:28 - INFO - datasets.arrow_dataset - Process #0 will write at /home/ysj6764/.cache/huggingface/datasets/text/default-d4501b9ae2e674eb/0.0.0/c4a140d10f020282918b5dd1b8a49f0104729c6177f60a6b49ec2a365ec69f34/cache-ff2f8974fe5d8f22_00000_of_00024.arrow
+05/18/2024 12:10:28 - INFO - datasets.arrow_dataset - Process #1 will write at /home/ysj6764/.cache/huggingface/datasets/text/default-d4501b9ae2e674eb/0.0.0/c4a140d10f020282918b5dd1b8a49f0104729c6177f60a6b49ec2a365ec69f34/cache-ff2f8974fe5d8f22_00001_of_00024.arrow
+05/18/2024 12:10:28 - INFO - datasets.arrow_dataset - Process #2 will write at /home/ysj6764/.cache/huggingface/datasets/text/default-d4501b9ae2e674eb/0.0.0/c4a140d10f020282918b5dd1b8a49f0104729c6177f60a6b49ec2a365ec69f34/cache-ff2f8974fe5d8f22_00002_of_00024.arrow
+05/18/2024 12:10:28 - INFO - datasets.arrow_dataset - Process #3 will write at /home/ysj6764/.cache/huggingface/datasets/text/default-d4501b9ae2e674eb/0.0.0/c4a140d10f020282918b5dd1b8a49f0104729c6177f60a6b49ec2a365ec69f34/cache-ff2f8974fe5d8f22_00003_of_00024.arrow
+05/18/2024 12:10:28 - INFO - datasets.arrow_dataset - Process #4 will write at /home/ysj6764/.cache/huggingface/datasets/text/default-d4501b9ae2e674eb/0.0.0/c4a140d10f020282918b5dd1b8a49f0104729c6177f60a6b49ec2a365ec69f34/cache-ff2f8974fe5d8f22_00004_of_00024.arrow
+05/18/2024 12:10:28 - INFO - datasets.arrow_dataset - Process #5 will write at /home/ysj6764/.cache/huggingface/datasets/text/default-d4501b9ae2e674eb/0.0.0/c4a140d10f020282918b5dd1b8a49f0104729c6177f60a6b49ec2a365ec69f34/cache-ff2f8974fe5d8f22_00005_of_00024.arrow
+05/18/2024 12:10:28 - INFO - datasets.arrow_dataset - Process #6 will write at /home/ysj6764/.cache/huggingface/datasets/text/default-d4501b9ae2e674eb/0.0.0/c4a140d10f020282918b5dd1b8a49f0104729c6177f60a6b49ec2a365ec69f34/cache-ff2f8974fe5d8f22_00006_of_00024.arrow
+05/18/2024 12:10:28 - INFO - datasets.arrow_dataset - Process #7 will write at /home/ysj6764/.cache/huggingface/datasets/text/default-d4501b9ae2e674eb/0.0.0/c4a140d10f020282918b5dd1b8a49f0104729c6177f60a6b49ec2a365ec69f34/cache-ff2f8974fe5d8f22_00007_of_00024.arrow
+05/18/2024 12:10:28 - INFO - datasets.arrow_dataset - Process #8 will write at /home/ysj6764/.cache/huggingface/datasets/text/default-d4501b9ae2e674eb/0.0.0/c4a140d10f020282918b5dd1b8a49f0104729c6177f60a6b49ec2a365ec69f34/cache-ff2f8974fe5d8f22_00008_of_00024.arrow
+05/18/2024 12:10:28 - INFO - datasets.arrow_dataset - Process #9 will write at /home/ysj6764/.cache/huggingface/datasets/text/default-d4501b9ae2e674eb/0.0.0/c4a140d10f020282918b5dd1b8a49f0104729c6177f60a6b49ec2a365ec69f34/cache-ff2f8974fe5d8f22_00009_of_00024.arrow
+05/18/2024 12:10:28 - INFO - datasets.arrow_dataset - Process #10 will write at /home/ysj6764/.cache/huggingface/datasets/text/default-d4501b9ae2e674eb/0.0.0/c4a140d10f020282918b5dd1b8a49f0104729c6177f60a6b49ec2a365ec69f34/cache-ff2f8974fe5d8f22_00010_of_00024.arrow
+05/18/2024 12:10:28 - INFO - datasets.arrow_dataset - Process #11 will write at /home/ysj6764/.cache/huggingface/datasets/text/default-d4501b9ae2e674eb/0.0.0/c4a140d10f020282918b5dd1b8a49f0104729c6177f60a6b49ec2a365ec69f34/cache-ff2f8974fe5d8f22_00011_of_00024.arrow
+05/18/2024 12:10:28 - INFO - datasets.arrow_dataset - Process #12 will write at /home/ysj6764/.cache/huggingface/datasets/text/default-d4501b9ae2e674eb/0.0.0/c4a140d10f020282918b5dd1b8a49f0104729c6177f60a6b49ec2a365ec69f34/cache-ff2f8974fe5d8f22_00012_of_00024.arrow
+05/18/2024 12:10:28 - INFO - datasets.arrow_dataset - Process #13 will write at /home/ysj6764/.cache/huggingface/datasets/text/default-d4501b9ae2e674eb/0.0.0/c4a140d10f020282918b5dd1b8a49f0104729c6177f60a6b49ec2a365ec69f34/cache-ff2f8974fe5d8f22_00013_of_00024.arrow
+05/18/2024 12:10:28 - INFO - datasets.arrow_dataset - Process #14 will write at /home/ysj6764/.cache/huggingface/datasets/text/default-d4501b9ae2e674eb/0.0.0/c4a140d10f020282918b5dd1b8a49f0104729c6177f60a6b49ec2a365ec69f34/cache-ff2f8974fe5d8f22_00014_of_00024.arrow
+05/18/2024 12:10:28 - INFO - datasets.arrow_dataset - Process #15 will write at /home/ysj6764/.cache/huggingface/datasets/text/default-d4501b9ae2e674eb/0.0.0/c4a140d10f020282918b5dd1b8a49f0104729c6177f60a6b49ec2a365ec69f34/cache-ff2f8974fe5d8f22_00015_of_00024.arrow
+05/18/2024 12:10:28 - INFO - datasets.arrow_dataset - Process #16 will write at /home/ysj6764/.cache/huggingface/datasets/text/default-d4501b9ae2e674eb/0.0.0/c4a140d10f020282918b5dd1b8a49f0104729c6177f60a6b49ec2a365ec69f34/cache-ff2f8974fe5d8f22_00016_of_00024.arrow
+05/18/2024 12:10:28 - INFO - datasets.arrow_dataset - Process #17 will write at /home/ysj6764/.cache/huggingface/datasets/text/default-d4501b9ae2e674eb/0.0.0/c4a140d10f020282918b5dd1b8a49f0104729c6177f60a6b49ec2a365ec69f34/cache-ff2f8974fe5d8f22_00017_of_00024.arrow
+05/18/2024 12:10:28 - INFO - datasets.arrow_dataset - Process #18 will write at /home/ysj6764/.cache/huggingface/datasets/text/default-d4501b9ae2e674eb/0.0.0/c4a140d10f020282918b5dd1b8a49f0104729c6177f60a6b49ec2a365ec69f34/cache-ff2f8974fe5d8f22_00018_of_00024.arrow
+05/18/2024 12:10:28 - INFO - datasets.arrow_dataset - Process #19 will write at /home/ysj6764/.cache/huggingface/datasets/text/default-d4501b9ae2e674eb/0.0.0/c4a140d10f020282918b5dd1b8a49f0104729c6177f60a6b49ec2a365ec69f34/cache-ff2f8974fe5d8f22_00019_of_00024.arrow
+05/18/2024 12:10:28 - INFO - datasets.arrow_dataset - Process #20 will write at /home/ysj6764/.cache/huggingface/datasets/text/default-d4501b9ae2e674eb/0.0.0/c4a140d10f020282918b5dd1b8a49f0104729c6177f60a6b49ec2a365ec69f34/cache-ff2f8974fe5d8f22_00020_of_00024.arrow
+05/18/2024 12:10:28 - INFO - datasets.arrow_dataset - Process #21 will write at /home/ysj6764/.cache/huggingface/datasets/text/default-d4501b9ae2e674eb/0.0.0/c4a140d10f020282918b5dd1b8a49f0104729c6177f60a6b49ec2a365ec69f34/cache-ff2f8974fe5d8f22_00021_of_00024.arrow
+05/18/2024 12:10:28 - INFO - datasets.arrow_dataset - Process #22 will write at /home/ysj6764/.cache/huggingface/datasets/text/default-d4501b9ae2e674eb/0.0.0/c4a140d10f020282918b5dd1b8a49f0104729c6177f60a6b49ec2a365ec69f34/cache-ff2f8974fe5d8f22_00022_of_00024.arrow
+05/18/2024 12:10:28 - INFO - datasets.arrow_dataset - Process #23 will write at /home/ysj6764/.cache/huggingface/datasets/text/default-d4501b9ae2e674eb/0.0.0/c4a140d10f020282918b5dd1b8a49f0104729c6177f60a6b49ec2a365ec69f34/cache-ff2f8974fe5d8f22_00023_of_00024.arrow
+05/18/2024 12:11:21 - INFO - datasets.arrow_dataset - Loading cached processed dataset at /home/ysj6764/.cache/huggingface/datasets/text/default-d4501b9ae2e674eb/0.0.0/c4a140d10f020282918b5dd1b8a49f0104729c6177f60a6b49ec2a365ec69f34/cache-ff2f8974fe5d8f22_*_of_00024.arrow
+05/18/2024 12:11:21 - INFO - datasets.arrow_dataset - Concatenating 24 shards
+05/18/2024 12:11:21 - INFO - datasets.arrow_dataset - Process #0 will write at /home/ysj6764/.cache/huggingface/datasets/text/default-d4501b9ae2e674eb/0.0.0/c4a140d10f020282918b5dd1b8a49f0104729c6177f60a6b49ec2a365ec69f34/cache-9477d129798a0602_00000_of_00024.arrow
+05/18/2024 12:11:21 - INFO - datasets.arrow_dataset - Process #1 will write at /home/ysj6764/.cache/huggingface/datasets/text/default-d4501b9ae2e674eb/0.0.0/c4a140d10f020282918b5dd1b8a49f0104729c6177f60a6b49ec2a365ec69f34/cache-9477d129798a0602_00001_of_00024.arrow
+05/18/2024 12:11:21 - INFO - datasets.arrow_dataset - Process #2 will write at /home/ysj6764/.cache/huggingface/datasets/text/default-d4501b9ae2e674eb/0.0.0/c4a140d10f020282918b5dd1b8a49f0104729c6177f60a6b49ec2a365ec69f34/cache-9477d129798a0602_00002_of_00024.arrow
+05/18/2024 12:11:21 - INFO - datasets.arrow_dataset - Process #3 will write at /home/ysj6764/.cache/huggingface/datasets/text/default-d4501b9ae2e674eb/0.0.0/c4a140d10f020282918b5dd1b8a49f0104729c6177f60a6b49ec2a365ec69f34/cache-9477d129798a0602_00003_of_00024.arrow
+05/18/2024 12:11:21 - INFO - datasets.arrow_dataset - Process #4 will write at /home/ysj6764/.cache/huggingface/datasets/text/default-d4501b9ae2e674eb/0.0.0/c4a140d10f020282918b5dd1b8a49f0104729c6177f60a6b49ec2a365ec69f34/cache-9477d129798a0602_00004_of_00024.arrow
+05/18/2024 12:11:21 - INFO - datasets.arrow_dataset - Process #5 will write at /home/ysj6764/.cache/huggingface/datasets/text/default-d4501b9ae2e674eb/0.0.0/c4a140d10f020282918b5dd1b8a49f0104729c6177f60a6b49ec2a365ec69f34/cache-9477d129798a0602_00005_of_00024.arrow
+05/18/2024 12:11:21 - INFO - datasets.arrow_dataset - Process #6 will write at /home/ysj6764/.cache/huggingface/datasets/text/default-d4501b9ae2e674eb/0.0.0/c4a140d10f020282918b5dd1b8a49f0104729c6177f60a6b49ec2a365ec69f34/cache-9477d129798a0602_00006_of_00024.arrow
+05/18/2024 12:11:21 - INFO - datasets.arrow_dataset - Process #7 will write at /home/ysj6764/.cache/huggingface/datasets/text/default-d4501b9ae2e674eb/0.0.0/c4a140d10f020282918b5dd1b8a49f0104729c6177f60a6b49ec2a365ec69f34/cache-9477d129798a0602_00007_of_00024.arrow
+05/18/2024 12:11:21 - INFO - datasets.arrow_dataset - Process #8 will write at /home/ysj6764/.cache/huggingface/datasets/text/default-d4501b9ae2e674eb/0.0.0/c4a140d10f020282918b5dd1b8a49f0104729c6177f60a6b49ec2a365ec69f34/cache-9477d129798a0602_00008_of_00024.arrow
+05/18/2024 12:11:21 - INFO - datasets.arrow_dataset - Process #9 will write at /home/ysj6764/.cache/huggingface/datasets/text/default-d4501b9ae2e674eb/0.0.0/c4a140d10f020282918b5dd1b8a49f0104729c6177f60a6b49ec2a365ec69f34/cache-9477d129798a0602_00009_of_00024.arrow
+05/18/2024 12:11:21 - INFO - datasets.arrow_dataset - Process #10 will write at /home/ysj6764/.cache/huggingface/datasets/text/default-d4501b9ae2e674eb/0.0.0/c4a140d10f020282918b5dd1b8a49f0104729c6177f60a6b49ec2a365ec69f34/cache-9477d129798a0602_00010_of_00024.arrow
+05/18/2024 12:11:21 - INFO - datasets.arrow_dataset - Process #11 will write at /home/ysj6764/.cache/huggingface/datasets/text/default-d4501b9ae2e674eb/0.0.0/c4a140d10f020282918b5dd1b8a49f0104729c6177f60a6b49ec2a365ec69f34/cache-9477d129798a0602_00011_of_00024.arrow
+05/18/2024 12:11:21 - INFO - datasets.arrow_dataset - Process #12 will write at /home/ysj6764/.cache/huggingface/datasets/text/default-d4501b9ae2e674eb/0.0.0/c4a140d10f020282918b5dd1b8a49f0104729c6177f60a6b49ec2a365ec69f34/cache-9477d129798a0602_00012_of_00024.arrow
+05/18/2024 12:11:21 - INFO - datasets.arrow_dataset - Process #13 will write at /home/ysj6764/.cache/huggingface/datasets/text/default-d4501b9ae2e674eb/0.0.0/c4a140d10f020282918b5dd1b8a49f0104729c6177f60a6b49ec2a365ec69f34/cache-9477d129798a0602_00013_of_00024.arrow
+05/18/2024 12:11:21 - INFO - datasets.arrow_dataset - Process #14 will write at /home/ysj6764/.cache/huggingface/datasets/text/default-d4501b9ae2e674eb/0.0.0/c4a140d10f020282918b5dd1b8a49f0104729c6177f60a6b49ec2a365ec69f34/cache-9477d129798a0602_00014_of_00024.arrow
+05/18/2024 12:11:21 - INFO - datasets.arrow_dataset - Process #15 will write at /home/ysj6764/.cache/huggingface/datasets/text/default-d4501b9ae2e674eb/0.0.0/c4a140d10f020282918b5dd1b8a49f0104729c6177f60a6b49ec2a365ec69f34/cache-9477d129798a0602_00015_of_00024.arrow
+05/18/2024 12:11:21 - INFO - datasets.arrow_dataset - Process #16 will write at /home/ysj6764/.cache/huggingface/datasets/text/default-d4501b9ae2e674eb/0.0.0/c4a140d10f020282918b5dd1b8a49f0104729c6177f60a6b49ec2a365ec69f34/cache-9477d129798a0602_00016_of_00024.arrow
+05/18/2024 12:11:21 - INFO - datasets.arrow_dataset - Process #17 will write at /home/ysj6764/.cache/huggingface/datasets/text/default-d4501b9ae2e674eb/0.0.0/c4a140d10f020282918b5dd1b8a49f0104729c6177f60a6b49ec2a365ec69f34/cache-9477d129798a0602_00017_of_00024.arrow
+05/18/2024 12:11:21 - INFO - datasets.arrow_dataset - Process #18 will write at /home/ysj6764/.cache/huggingface/datasets/text/default-d4501b9ae2e674eb/0.0.0/c4a140d10f020282918b5dd1b8a49f0104729c6177f60a6b49ec2a365ec69f34/cache-9477d129798a0602_00018_of_00024.arrow
+05/18/2024 12:11:21 - INFO - datasets.arrow_dataset - Process #19 will write at /home/ysj6764/.cache/huggingface/datasets/text/default-d4501b9ae2e674eb/0.0.0/c4a140d10f020282918b5dd1b8a49f0104729c6177f60a6b49ec2a365ec69f34/cache-9477d129798a0602_00019_of_00024.arrow
+05/18/2024 12:11:21 - INFO - datasets.arrow_dataset - Process #20 will write at /home/ysj6764/.cache/huggingface/datasets/text/default-d4501b9ae2e674eb/0.0.0/c4a140d10f020282918b5dd1b8a49f0104729c6177f60a6b49ec2a365ec69f34/cache-9477d129798a0602_00020_of_00024.arrow
+05/18/2024 12:11:21 - INFO - datasets.arrow_dataset - Process #21 will write at /home/ysj6764/.cache/huggingface/datasets/text/default-d4501b9ae2e674eb/0.0.0/c4a140d10f020282918b5dd1b8a49f0104729c6177f60a6b49ec2a365ec69f34/cache-9477d129798a0602_00021_of_00024.arrow
+05/18/2024 12:11:21 - INFO - datasets.arrow_dataset - Process #22 will write at /home/ysj6764/.cache/huggingface/datasets/text/default-d4501b9ae2e674eb/0.0.0/c4a140d10f020282918b5dd1b8a49f0104729c6177f60a6b49ec2a365ec69f34/cache-9477d129798a0602_00022_of_00024.arrow
+05/18/2024 12:11:21 - INFO - datasets.arrow_dataset - Process #23 will write at /home/ysj6764/.cache/huggingface/datasets/text/default-d4501b9ae2e674eb/0.0.0/c4a140d10f020282918b5dd1b8a49f0104729c6177f60a6b49ec2a365ec69f34/cache-9477d129798a0602_00023_of_00024.arrow
+05/18/2024 12:11:22 - INFO - datasets.arrow_dataset - Loading cached processed dataset at /home/ysj6764/.cache/huggingface/datasets/text/default-d4501b9ae2e674eb/0.0.0/c4a140d10f020282918b5dd1b8a49f0104729c6177f60a6b49ec2a365ec69f34/cache-9477d129798a0602_*_of_00024.arrow
+05/18/2024 12:11:22 - INFO - datasets.arrow_dataset - Concatenating 24 shards
+05/18/2024 12:11:22 - INFO - datasets.arrow_dataset - Process #0 will write at /home/ysj6764/.cache/huggingface/datasets/text/default-d4501b9ae2e674eb/0.0.0/c4a140d10f020282918b5dd1b8a49f0104729c6177f60a6b49ec2a365ec69f34/cache-bf2d34a4ab251189_00000_of_00024.arrow
+05/18/2024 12:11:22 - INFO - datasets.arrow_dataset - Process #1 will write at /home/ysj6764/.cache/huggingface/datasets/text/default-d4501b9ae2e674eb/0.0.0/c4a140d10f020282918b5dd1b8a49f0104729c6177f60a6b49ec2a365ec69f34/cache-bf2d34a4ab251189_00001_of_00024.arrow
+05/18/2024 12:11:22 - INFO - datasets.arrow_dataset - Process #2 will write at /home/ysj6764/.cache/huggingface/datasets/text/default-d4501b9ae2e674eb/0.0.0/c4a140d10f020282918b5dd1b8a49f0104729c6177f60a6b49ec2a365ec69f34/cache-bf2d34a4ab251189_00002_of_00024.arrow
+05/18/2024 12:11:22 - INFO - datasets.arrow_dataset - Process #3 will write at /home/ysj6764/.cache/huggingface/datasets/text/default-d4501b9ae2e674eb/0.0.0/c4a140d10f020282918b5dd1b8a49f0104729c6177f60a6b49ec2a365ec69f34/cache-bf2d34a4ab251189_00003_of_00024.arrow
+05/18/2024 12:11:22 - INFO - datasets.arrow_dataset - Process #4 will write at /home/ysj6764/.cache/huggingface/datasets/text/default-d4501b9ae2e674eb/0.0.0/c4a140d10f020282918b5dd1b8a49f0104729c6177f60a6b49ec2a365ec69f34/cache-bf2d34a4ab251189_00004_of_00024.arrow
+05/18/2024 12:11:22 - INFO - datasets.arrow_dataset - Process #5 will write at /home/ysj6764/.cache/huggingface/datasets/text/default-d4501b9ae2e674eb/0.0.0/c4a140d10f020282918b5dd1b8a49f0104729c6177f60a6b49ec2a365ec69f34/cache-bf2d34a4ab251189_00005_of_00024.arrow
+05/18/2024 12:11:22 - INFO - datasets.arrow_dataset - Process #6 will write at /home/ysj6764/.cache/huggingface/datasets/text/default-d4501b9ae2e674eb/0.0.0/c4a140d10f020282918b5dd1b8a49f0104729c6177f60a6b49ec2a365ec69f34/cache-bf2d34a4ab251189_00006_of_00024.arrow
+05/18/2024 12:11:22 - INFO - datasets.arrow_dataset - Process #7 will write at /home/ysj6764/.cache/huggingface/datasets/text/default-d4501b9ae2e674eb/0.0.0/c4a140d10f020282918b5dd1b8a49f0104729c6177f60a6b49ec2a365ec69f34/cache-bf2d34a4ab251189_00007_of_00024.arrow
+05/18/2024 12:11:22 - INFO - datasets.arrow_dataset - Process #8 will write at /home/ysj6764/.cache/huggingface/datasets/text/default-d4501b9ae2e674eb/0.0.0/c4a140d10f020282918b5dd1b8a49f0104729c6177f60a6b49ec2a365ec69f34/cache-bf2d34a4ab251189_00008_of_00024.arrow
+05/18/2024 12:11:22 - INFO - datasets.arrow_dataset - Process #9 will write at /home/ysj6764/.cache/huggingface/datasets/text/default-d4501b9ae2e674eb/0.0.0/c4a140d10f020282918b5dd1b8a49f0104729c6177f60a6b49ec2a365ec69f34/cache-bf2d34a4ab251189_00009_of_00024.arrow
+05/18/2024 12:11:22 - INFO - datasets.arrow_dataset - Process #10 will write at /home/ysj6764/.cache/huggingface/datasets/text/default-d4501b9ae2e674eb/0.0.0/c4a140d10f020282918b5dd1b8a49f0104729c6177f60a6b49ec2a365ec69f34/cache-bf2d34a4ab251189_00010_of_00024.arrow
+05/18/2024 12:11:22 - INFO - datasets.arrow_dataset - Process #11 will write at /home/ysj6764/.cache/huggingface/datasets/text/default-d4501b9ae2e674eb/0.0.0/c4a140d10f020282918b5dd1b8a49f0104729c6177f60a6b49ec2a365ec69f34/cache-bf2d34a4ab251189_00011_of_00024.arrow
+05/18/2024 12:11:22 - INFO - datasets.arrow_dataset - Process #12 will write at /home/ysj6764/.cache/huggingface/datasets/text/default-d4501b9ae2e674eb/0.0.0/c4a140d10f020282918b5dd1b8a49f0104729c6177f60a6b49ec2a365ec69f34/cache-bf2d34a4ab251189_00012_of_00024.arrow
+05/18/2024 12:11:22 - INFO - datasets.arrow_dataset - Process #13 will write at /home/ysj6764/.cache/huggingface/datasets/text/default-d4501b9ae2e674eb/0.0.0/c4a140d10f020282918b5dd1b8a49f0104729c6177f60a6b49ec2a365ec69f34/cache-bf2d34a4ab251189_00013_of_00024.arrow
+05/18/2024 12:11:22 - INFO - datasets.arrow_dataset - Process #14 will write at /home/ysj6764/.cache/huggingface/datasets/text/default-d4501b9ae2e674eb/0.0.0/c4a140d10f020282918b5dd1b8a49f0104729c6177f60a6b49ec2a365ec69f34/cache-bf2d34a4ab251189_00014_of_00024.arrow
+05/18/2024 12:11:22 - INFO - datasets.arrow_dataset - Process #15 will write at /home/ysj6764/.cache/huggingface/datasets/text/default-d4501b9ae2e674eb/0.0.0/c4a140d10f020282918b5dd1b8a49f0104729c6177f60a6b49ec2a365ec69f34/cache-bf2d34a4ab251189_00015_of_00024.arrow
+05/18/2024 12:11:22 - INFO - datasets.arrow_dataset - Process #16 will write at /home/ysj6764/.cache/huggingface/datasets/text/default-d4501b9ae2e674eb/0.0.0/c4a140d10f020282918b5dd1b8a49f0104729c6177f60a6b49ec2a365ec69f34/cache-bf2d34a4ab251189_00016_of_00024.arrow
+05/18/2024 12:11:22 - INFO - datasets.arrow_dataset - Process #17 will write at /home/ysj6764/.cache/huggingface/datasets/text/default-d4501b9ae2e674eb/0.0.0/c4a140d10f020282918b5dd1b8a49f0104729c6177f60a6b49ec2a365ec69f34/cache-bf2d34a4ab251189_00017_of_00024.arrow
+05/18/2024 12:11:22 - INFO - datasets.arrow_dataset - Process #18 will write at /home/ysj6764/.cache/huggingface/datasets/text/default-d4501b9ae2e674eb/0.0.0/c4a140d10f020282918b5dd1b8a49f0104729c6177f60a6b49ec2a365ec69f34/cache-bf2d34a4ab251189_00018_of_00024.arrow
+05/18/2024 12:11:22 - INFO - datasets.arrow_dataset - Process #19 will write at /home/ysj6764/.cache/huggingface/datasets/text/default-d4501b9ae2e674eb/0.0.0/c4a140d10f020282918b5dd1b8a49f0104729c6177f60a6b49ec2a365ec69f34/cache-bf2d34a4ab251189_00019_of_00024.arrow
+05/18/2024 12:11:22 - INFO - datasets.arrow_dataset - Process #20 will write at /home/ysj6764/.cache/huggingface/datasets/text/default-d4501b9ae2e674eb/0.0.0/c4a140d10f020282918b5dd1b8a49f0104729c6177f60a6b49ec2a365ec69f34/cache-bf2d34a4ab251189_00020_of_00024.arrow
+05/18/2024 12:11:22 - INFO - datasets.arrow_dataset - Process #21 will write at /home/ysj6764/.cache/huggingface/datasets/text/default-d4501b9ae2e674eb/0.0.0/c4a140d10f020282918b5dd1b8a49f0104729c6177f60a6b49ec2a365ec69f34/cache-bf2d34a4ab251189_00021_of_00024.arrow
+05/18/2024 12:11:22 - INFO - datasets.arrow_dataset - Process #22 will write at /home/ysj6764/.cache/huggingface/datasets/text/default-d4501b9ae2e674eb/0.0.0/c4a140d10f020282918b5dd1b8a49f0104729c6177f60a6b49ec2a365ec69f34/cache-bf2d34a4ab251189_00022_of_00024.arrow
+05/18/2024 12:11:22 - INFO - datasets.arrow_dataset - Process #23 will write at /home/ysj6764/.cache/huggingface/datasets/text/default-d4501b9ae2e674eb/0.0.0/c4a140d10f020282918b5dd1b8a49f0104729c6177f60a6b49ec2a365ec69f34/cache-bf2d34a4ab251189_00023_of_00024.arrow
+05/18/2024 12:12:18 - INFO - datasets.arrow_dataset - Loading cached processed dataset at /home/ysj6764/.cache/huggingface/datasets/text/default-d4501b9ae2e674eb/0.0.0/c4a140d10f020282918b5dd1b8a49f0104729c6177f60a6b49ec2a365ec69f34/cache-bf2d34a4ab251189_*_of_00024.arrow
+05/18/2024 12:12:18 - INFO - datasets.arrow_dataset - Concatenating 24 shards
+05/18/2024 12:12:19 - INFO - datasets.arrow_dataset - Process #0 will write at /home/ysj6764/.cache/huggingface/datasets/text/default-d4501b9ae2e674eb/0.0.0/c4a140d10f020282918b5dd1b8a49f0104729c6177f60a6b49ec2a365ec69f34/cache-74fe90fd699bfac0_00000_of_00024.arrow
+05/18/2024 12:12:19 - INFO - datasets.arrow_dataset - Process #1 will write at /home/ysj6764/.cache/huggingface/datasets/text/default-d4501b9ae2e674eb/0.0.0/c4a140d10f020282918b5dd1b8a49f0104729c6177f60a6b49ec2a365ec69f34/cache-74fe90fd699bfac0_00001_of_00024.arrow
+05/18/2024 12:12:19 - INFO - datasets.arrow_dataset - Process #2 will write at /home/ysj6764/.cache/huggingface/datasets/text/default-d4501b9ae2e674eb/0.0.0/c4a140d10f020282918b5dd1b8a49f0104729c6177f60a6b49ec2a365ec69f34/cache-74fe90fd699bfac0_00002_of_00024.arrow
+05/18/2024 12:12:19 - INFO - datasets.arrow_dataset - Process #3 will write at /home/ysj6764/.cache/huggingface/datasets/text/default-d4501b9ae2e674eb/0.0.0/c4a140d10f020282918b5dd1b8a49f0104729c6177f60a6b49ec2a365ec69f34/cache-74fe90fd699bfac0_00003_of_00024.arrow
+05/18/2024 12:12:19 - INFO - datasets.arrow_dataset - Process #4 will write at /home/ysj6764/.cache/huggingface/datasets/text/default-d4501b9ae2e674eb/0.0.0/c4a140d10f020282918b5dd1b8a49f0104729c6177f60a6b49ec2a365ec69f34/cache-74fe90fd699bfac0_00004_of_00024.arrow
+05/18/2024 12:12:19 - INFO - datasets.arrow_dataset - Process #5 will write at /home/ysj6764/.cache/huggingface/datasets/text/default-d4501b9ae2e674eb/0.0.0/c4a140d10f020282918b5dd1b8a49f0104729c6177f60a6b49ec2a365ec69f34/cache-74fe90fd699bfac0_00005_of_00024.arrow
+05/18/2024 12:12:19 - INFO - datasets.arrow_dataset - Process #6 will write at /home/ysj6764/.cache/huggingface/datasets/text/default-d4501b9ae2e674eb/0.0.0/c4a140d10f020282918b5dd1b8a49f0104729c6177f60a6b49ec2a365ec69f34/cache-74fe90fd699bfac0_00006_of_00024.arrow
+05/18/2024 12:12:19 - INFO - datasets.arrow_dataset - Process #7 will write at /home/ysj6764/.cache/huggingface/datasets/text/default-d4501b9ae2e674eb/0.0.0/c4a140d10f020282918b5dd1b8a49f0104729c6177f60a6b49ec2a365ec69f34/cache-74fe90fd699bfac0_00007_of_00024.arrow
+05/18/2024 12:12:19 - INFO - datasets.arrow_dataset - Process #8 will write at /home/ysj6764/.cache/huggingface/datasets/text/default-d4501b9ae2e674eb/0.0.0/c4a140d10f020282918b5dd1b8a49f0104729c6177f60a6b49ec2a365ec69f34/cache-74fe90fd699bfac0_00008_of_00024.arrow
+05/18/2024 12:12:19 - INFO - datasets.arrow_dataset - Process #9 will write at /home/ysj6764/.cache/huggingface/datasets/text/default-d4501b9ae2e674eb/0.0.0/c4a140d10f020282918b5dd1b8a49f0104729c6177f60a6b49ec2a365ec69f34/cache-74fe90fd699bfac0_00009_of_00024.arrow
+05/18/2024 12:12:19 - INFO - datasets.arrow_dataset - Process #10 will write at /home/ysj6764/.cache/huggingface/datasets/text/default-d4501b9ae2e674eb/0.0.0/c4a140d10f020282918b5dd1b8a49f0104729c6177f60a6b49ec2a365ec69f34/cache-74fe90fd699bfac0_00010_of_00024.arrow
+05/18/2024 12:12:19 - INFO - datasets.arrow_dataset - Process #11 will write at /home/ysj6764/.cache/huggingface/datasets/text/default-d4501b9ae2e674eb/0.0.0/c4a140d10f020282918b5dd1b8a49f0104729c6177f60a6b49ec2a365ec69f34/cache-74fe90fd699bfac0_00011_of_00024.arrow
+05/18/2024 12:12:19 - INFO - datasets.arrow_dataset - Process #12 will write at /home/ysj6764/.cache/huggingface/datasets/text/default-d4501b9ae2e674eb/0.0.0/c4a140d10f020282918b5dd1b8a49f0104729c6177f60a6b49ec2a365ec69f34/cache-74fe90fd699bfac0_00012_of_00024.arrow
+05/18/2024 12:12:19 - INFO - datasets.arrow_dataset - Process #13 will write at /home/ysj6764/.cache/huggingface/datasets/text/default-d4501b9ae2e674eb/0.0.0/c4a140d10f020282918b5dd1b8a49f0104729c6177f60a6b49ec2a365ec69f34/cache-74fe90fd699bfac0_00013_of_00024.arrow
+05/18/2024 12:12:19 - INFO - datasets.arrow_dataset - Process #14 will write at /home/ysj6764/.cache/huggingface/datasets/text/default-d4501b9ae2e674eb/0.0.0/c4a140d10f020282918b5dd1b8a49f0104729c6177f60a6b49ec2a365ec69f34/cache-74fe90fd699bfac0_00014_of_00024.arrow
+05/18/2024 12:12:19 - INFO - datasets.arrow_dataset - Process #15 will write at /home/ysj6764/.cache/huggingface/datasets/text/default-d4501b9ae2e674eb/0.0.0/c4a140d10f020282918b5dd1b8a49f0104729c6177f60a6b49ec2a365ec69f34/cache-74fe90fd699bfac0_00015_of_00024.arrow
+05/18/2024 12:12:19 - INFO - datasets.arrow_dataset - Process #16 will write at /home/ysj6764/.cache/huggingface/datasets/text/default-d4501b9ae2e674eb/0.0.0/c4a140d10f020282918b5dd1b8a49f0104729c6177f60a6b49ec2a365ec69f34/cache-74fe90fd699bfac0_00016_of_00024.arrow
+05/18/2024 12:12:19 - INFO - datasets.arrow_dataset - Process #17 will write at /home/ysj6764/.cache/huggingface/datasets/text/default-d4501b9ae2e674eb/0.0.0/c4a140d10f020282918b5dd1b8a49f0104729c6177f60a6b49ec2a365ec69f34/cache-74fe90fd699bfac0_00017_of_00024.arrow
+05/18/2024 12:12:19 - INFO - datasets.arrow_dataset - Process #18 will write at /home/ysj6764/.cache/huggingface/datasets/text/default-d4501b9ae2e674eb/0.0.0/c4a140d10f020282918b5dd1b8a49f0104729c6177f60a6b49ec2a365ec69f34/cache-74fe90fd699bfac0_00018_of_00024.arrow
+05/18/2024 12:12:19 - INFO - datasets.arrow_dataset - Process #19 will write at /home/ysj6764/.cache/huggingface/datasets/text/default-d4501b9ae2e674eb/0.0.0/c4a140d10f020282918b5dd1b8a49f0104729c6177f60a6b49ec2a365ec69f34/cache-74fe90fd699bfac0_00019_of_00024.arrow
+05/18/2024 12:12:19 - INFO - datasets.arrow_dataset - Process #20 will write at /home/ysj6764/.cache/huggingface/datasets/text/default-d4501b9ae2e674eb/0.0.0/c4a140d10f020282918b5dd1b8a49f0104729c6177f60a6b49ec2a365ec69f34/cache-74fe90fd699bfac0_00020_of_00024.arrow
+05/18/2024 12:12:19 - INFO - datasets.arrow_dataset - Process #21 will write at /home/ysj6764/.cache/huggingface/datasets/text/default-d4501b9ae2e674eb/0.0.0/c4a140d10f020282918b5dd1b8a49f0104729c6177f60a6b49ec2a365ec69f34/cache-74fe90fd699bfac0_00021_of_00024.arrow
+05/18/2024 12:12:19 - INFO - datasets.arrow_dataset - Process #22 will write at /home/ysj6764/.cache/huggingface/datasets/text/default-d4501b9ae2e674eb/0.0.0/c4a140d10f020282918b5dd1b8a49f0104729c6177f60a6b49ec2a365ec69f34/cache-74fe90fd699bfac0_00022_of_00024.arrow
+05/18/2024 12:12:19 - INFO - datasets.arrow_dataset - Process #23 will write at /home/ysj6764/.cache/huggingface/datasets/text/default-d4501b9ae2e674eb/0.0.0/c4a140d10f020282918b5dd1b8a49f0104729c6177f60a6b49ec2a365ec69f34/cache-74fe90fd699bfac0_00023_of_00024.arrow
+05/18/2024 12:12:20 - INFO - datasets.arrow_dataset - Loading cached processed dataset at /home/ysj6764/.cache/huggingface/datasets/text/default-d4501b9ae2e674eb/0.0.0/c4a140d10f020282918b5dd1b8a49f0104729c6177f60a6b49ec2a365ec69f34/cache-74fe90fd699bfac0_*_of_00024.arrow
+05/18/2024 12:12:20 - INFO - datasets.arrow_dataset - Concatenating 24 shards
+05/18/2024 12:12:21 - WARNING - accelerate.utils.other - Detected kernel version 3.10.0, which is below the recommended minimum of 5.5.0; this can cause the process to hang. It is recommended to upgrade the kernel to the minimum version or higher.

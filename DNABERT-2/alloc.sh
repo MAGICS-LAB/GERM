@@ -1,0 +1,1 @@
+salloc -A p32301 --partition=gengpu --constraint=sxm --gres=gpu:a100:2 -N 1 --cpus-per-task=24 --mem=200G --time=2:00:00
