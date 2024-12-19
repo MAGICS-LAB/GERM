@@ -114,13 +114,13 @@ quant:
     a_qconfig:
         quantizer: FixedFakeQuantize
         observer: AvgMinMaxObserver
-        bit: 6
+        bit: n
         symmetric: False
         ch_axis: -1
     w_qconfig:
         quantizer: FixedFakeQuantize
         observer: MinMaxObserver
-        bit: 6
+        bit: n
         symmetric: True
         ch_axis: 0
     calibrate: 256
@@ -135,7 +135,7 @@ sh run.sh
 
 First, you need to generate activation scales.
 ```bash
-cd /smoothquant/examples
+cd smoothquant/examples
 sh act_pipe.sh
 ```
 
@@ -144,17 +144,28 @@ After that, proceed with the Smoothquant.
 sh ppl_pipe.sh
 ```
 
+If you want to change the quantization bit-width, it is recommended to edit `smoothquant/smoothquant/fake_quant.py`, search for *n_bits=8*, and replace it with your desired value *n_bits=n*. After making the changes, reinstall the package.
+```bash
+cd smoothquant
+python setup.py install
+```
+
 ### 5.3 Omniquant
 
 First, you need to get scales and shifts.
 ```bash
-cd /omniquant/OmniQuant/scripts
+cd omniquant/OmniQuant/scripts
 sh act_pipe.sh
 ```
 
 After that, proceed with the Omniquant.
 ```bash
 sh run.sh
+```
+You can modify the quantization bit-width within the script.
+```bash
+--wbits n \
+--abits n \
 ```
 ## 6. Evaluation
 To perform evaluation, navigate to the `evaluation` directory.
