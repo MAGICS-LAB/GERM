@@ -1,2 +1,0 @@
-export PYTHONPATH=$PYTHONPATH:$PWD
-python examples/generate_act_scales_modify.py --output-path out/dnabert/  --dataset-path /projects/p32013/DNA/data/dnabert_2_pretrain/dev.txt --model_name_or_path 'zhihan1996/DNABERT-2-117M' --trust_remote_code 

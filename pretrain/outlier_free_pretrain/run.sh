@@ -1,13 +1,13 @@
 torchrun --nproc_per_node=2 run_mlm.py \
-  --config_name "/../DNABERT2" \
-  --train_file "/../data/dnabert_2_pretrain/train.txt" \
-  --validation_file "/../data/dnabert_2_pretrain/dev.txt" \
+  --config_name "../DNABERT2" \
+  --train_file "../data/dnabert_2_pretrain/train.txt" \
+  --validation_file "../data/dnabert_2_pretrain/dev.txt" \
   --per_device_train_batch_size 512 \
   --per_device_eval_batch_size 512 \
   --do_train \
   --do_eval \
   --cache_dir .hf_cache \
-  --output_dir "/../models/dnabert2-10" \
+  --output_dir "your/path/to/save" \
   --trust_remote_code=True \
   --tokenizer_name "zhihan1996/DNABERT-2-117M" \
   --gradient_accumulation_steps 4 \

@@ -6,7 +6,7 @@ torchrun --nproc-per-node=1 run_mlm.py \
   --per_device_eval_batch_size 1024 \
   --do_train \
   --do_eval \
-  --output_dir "../models/dnabert2-10" \
+  --output_dir "your/path/to/save" \
   --trust_remote_code=True \
   --tokenizer_name "zhihan1996/DNABERT-2-117M" \
   --gradient_accumulation_steps 6 \
