@@ -97,6 +97,5 @@ transformer-smaller-training-vocab==0.4.0
 transformer_engine==0.0.0
 transformers==4.45.2
 typing_extensions
-vllm==0.6.3.post1
 wandb
 xformers
