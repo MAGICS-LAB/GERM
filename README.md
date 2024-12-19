@@ -161,7 +161,7 @@ To perform evaluation, navigate to the `evaluation` directory.
 ```bash
 sh run.sh
 ```
-In the script, you can choose whether to perform traditional WnAn (Weight n-bit, Activation n-bit) quantization as shown below:  
+In the script, you can choose whether to perform traditional W**n**A**n** (Weights-**n**bit,Activations-**n**bit) quantization as shown below:  
 
 ```bash
 --n_bits n \
