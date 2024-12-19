@@ -30,13 +30,11 @@ If you have any question regarding our paper or codes, please feel free to start
 
 If you use GERM in your work, please kindly cite our paper and code:
 ```
-@misc{zhou2023dnabert2,
-      title={DNABERT-2: Efficient Foundation Model and Benchmark For Multi-Species Genome}, 
-      author={Zhihan Zhou and Yanrong Ji and Weijian Li and Pratik Dutta and Ramana Davuluri and Han Liu},
-      year={2023},
-      eprint={2306.15006},
-      archivePrefix={arXiv},
-      primaryClass={q-bio.GN}
+@misc{luo2024germ,
+      title={Making Genomic Foundation Models more Foundational Requires Outlier Removal: A Case Study on DNABERT-2}, 
+      author={Haozheng Luo and CHENGHAO QIU and Maojiang Su and Zhihan Zhou and Jerry Yao-Chieh Hu and Zoe Mehta and Guo Ye and Han Liu},
+      year={2024},
+      url={https://github.com/MAGICS-LAB/GERM}
 }
 ```
 
