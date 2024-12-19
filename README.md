@@ -162,7 +162,7 @@ After that, proceed with the Omniquant.
 ```bash
 sh run.sh
 ```
-You can modify the quantization bit-width within the script.
+You can modify the quantization bit-width within the `run.sh` script.
 ```bash
 --wbits n \
 --abits n \
