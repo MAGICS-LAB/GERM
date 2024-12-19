@@ -1,7 +1,7 @@
 accelerate
 attributedict
 attrs
-auto_gptq @ file:///projects/p32013/DNA/AutoGPTQ-bugfix
+auto_gptq
 bert-score==0.3.13
 bioc==2.1
 biopython==1.83

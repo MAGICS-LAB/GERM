@@ -248,7 +248,7 @@ def parse_args():
     parser.add_argument(
         "--cache_dir",
         type=str,
-        default='/projects/p32013/DNA/smoothquant/cache'
+        default='../smoothquant/cache'
     )
     parser.add_argument(
         '--model_type',

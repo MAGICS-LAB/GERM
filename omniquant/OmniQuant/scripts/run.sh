@@ -27,7 +27,7 @@ for checkpoint in "${checkpoints[@]}"; do
     python main.py \
         --model ${ckpt_dir}/${ckpt}/${folder}_${checkpoint} \
         --cache_dir ../omniquant/OmniQuant/cache \
-        --data_path /scratch/hlv8980/data/${checkpoint} \
+        --data_path path/to/data/${checkpoint} \
         --wbits 4 \
         --abits 4 \
         --lwc \

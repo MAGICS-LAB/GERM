@@ -21,7 +21,7 @@ for checkpoint in "${checkpoints[@]}"; do
         --alpha 0.5 \
         --model_path ${ckpt_dir}/${ckpt}/${folder}_${checkpoint} \
         --act_scales_path ${act_base_dir}/${type}/${checkpoint}.pt \
-        --validation_file /scratch/hlv8980/data/${checkpoint}/dev.csv \
+        --validation_file path/to/data/${checkpoint}/dev.csv \
         --per_device_eval_batch_size 32 \
         --output_dir "${output_base_dir}/${type}/${checkpoint}" \
         --seed 3000 \

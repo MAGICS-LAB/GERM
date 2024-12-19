@@ -24,7 +24,7 @@ for checkpoint in "${checkpoints[@]}"; do
         --model ${ckpt_dir}/${ckpt}/${folder}_${checkpoint} \
         --model_max_length 128 \
         --cache_dir ../omniquant/OmniQuant/cache \
-        --data_path /scratch/hlv8980/data/${checkpoint} \
+        --data_path path/to/data/${checkpoint} \
         --preprocessing_num_workers 0 \
         --trust_remote_code True \
         --attn_softmax $attn \
