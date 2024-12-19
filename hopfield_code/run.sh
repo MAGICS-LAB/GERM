@@ -1,0 +1,28 @@
+torchrun --nproc_per_node=2 run_mlm.py \
+  --config_name "/../DNABERT2" \
+  --train_file "/../data/dnabert_2_pretrain/train.txt" \
+  --validation_file "/../data/dnabert_2_pretrain/dev.txt" \
+  --per_device_train_batch_size 512 \
+  --per_device_eval_batch_size 512 \
+  --do_train \
+  --do_eval \
+  --cache_dir .hf_cache \
+  --output_dir "/../models/dnabert2-10" \
+  --trust_remote_code=True \
+  --tokenizer_name "zhihan1996/DNABERT-2-117M" \
+  --gradient_accumulation_steps 4 \
+  --max_seq_length 128 \
+  --save_total_limit 5 \
+  --weight_decay 1e-05 \
+  --adam_beta2 0.95 \
+  --learning_rate 1e-04 \
+  --logging_steps 1 \
+  --max_steps 10 \
+  --eval_steps 1000 \
+  --save_steps 1000 \
+  --warmup_ratio 0.05 \
+  --preprocessing_num_workers 10 \
+  --fp16 \
+  --report_to "wandb" \
+  --evaluation_strategy "steps" \
+  --run_name "dnabert" \
