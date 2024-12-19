@@ -172,11 +172,11 @@ To perform evaluation, navigate to the `evaluation` directory.
 ```bash
 sh run.sh
 ```
-In the script, you can choose whether to perform traditional WA quantization as shown below:  
+In the script, you can choose whether to perform traditional W**n**A**n** (Weights-**n**bit,Activations-**n**bit) quantization as shown below:  
 
 ```bash
---n_bits 8 \
---n_bits_act 8 \
+--n_bits n \
+--n_bits_act n \
 --quantize
 ```
 
