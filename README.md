@@ -28,10 +28,7 @@
 
 If you have any question regarding our paper or codes, please feel free to start an issue.
 
-If you use GERM in your work, please kindly cite our paper:
-
-**DNABERT-2**
-
+If you use GERM in your work, please kindly cite our paper and code:
 ```
 @misc{zhou2023dnabert2,
       title={DNABERT-2: Efficient Foundation Model and Benchmark For Multi-Species Genome}, 
@@ -43,21 +40,14 @@ If you use GERM in your work, please kindly cite our paper:
 }
 ```
 
-**DNABERT**
 
-```
-@article{ji2021dnabert,
-    author = {Ji, Yanrong and Zhou, Zhihan and Liu, Han and Davuluri, Ramana V},
-    title = "{DNABERT: pre-trained Bidirectional Encoder Representations from Transformers model for DNA-language in genome}",
-    journal = {Bioinformatics},
-    volume = {37},
-    number = {15},
-    pages = {2112-2120},
-    year = {2021},
-    month = {02},
-    issn = {1367-4803},
-    doi = {10.1093/bioinformatics/btab083},
-    url = {https://doi.org/10.1093/bioinformatics/btab083},
-    eprint = {https://academic.oup.com/bioinformatics/article-pdf/37/15/2112/50578892/btab083.pdf},
-}
-```
+## Acknowledgement
+We appreciate the following GitHub repos a lot for their valuable code and efforts.
+- Time-Series-Library (https://github.com/thuml/Time-Series-Library)
+- AutoTimes (https://github.com/thuml/AutoTimes)
+- ST-MoE-BERT (https://github.com/he-h/ST-MoE-BERT)
+
+
+
+
+
