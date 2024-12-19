@@ -15,7 +15,7 @@
    Scripts and tools for testing outliers.
 
 
-## 3. Setup environment
+## Setup environment
 
     # create and activate virtual python environment
     conda create -n dna python=3.8
@@ -24,7 +24,7 @@
     # install required packages
     python3 -m pip install -r requirements.txt
 
-## 7. Citation
+## Citation
 
 If you have any question regarding our paper or codes, please feel free to start an issue.
 
