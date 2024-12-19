@@ -18,13 +18,18 @@ The repo contains:
 
 ## Contents
 
-- [1. Introduction](#1-introduction)
-- [2. Environment Setup](#2-environment-setup)
-- [3. Pre-Training](#3-pre-training)
-- [4. Finetune](#4-finetune)
-- [5. Quantization](#5-quantization)
-- [6. Evaluation](#6-evaluation)
-- [7. Citation](#7-citation)
+- [Making Genomic Foundation Models more Foundational Requires Outlier Removal: A Case Study on DNABERT-2](#making-genomic-foundation-models-more-foundational-requires-outlier-removal-a-case-study-on-dnabert-2)
+  - [Contents](#contents)
+  - [1. Introduction](#1-introduction)
+  - [2. Environment setup](#2-environment-setup)
+  - [3. Pre-Training](#3-pre-training)
+  - [4. Finetune](#4-finetune)
+  - [5. Quantization](#5-quantization)
+    - [5.1 outlier\_suppression](#51-outlier_suppression)
+    - [5.2 Smoothquant](#52-smoothquant)
+    - [5.3 Omniquant](#53-omniquant)
+  - [6. Evaluation](#6-evaluation)
+  - [7. Citation](#7-citation)
 
 ## 1. Introduction
 
