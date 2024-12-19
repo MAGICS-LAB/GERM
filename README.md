@@ -193,3 +193,14 @@ If you use GERM in your work, please kindly cite our paper:
 ```
 to be filled
 ```
+
+## 8.Acknowledgement
+We appreciate the following GitHub repos a lot for their valuable code and efforts.
+- DNABERT-2 (https://github.com/MAGICS-LAB/DNABERT_2)
+- HyenaDNA (https://github.com/HazyResearch/hyena-dna)
+- SmoothQuant (https://github.com/mit-han-lab/smoothquant)
+- OutEffHop (https://github.com/MAGICS-LAB/OutEffHop)
+- OmniQuant (https://github.com/OpenGVLab/OmniQuant)
+- Outlier Suppression (https://github.com/wimh966/outlier_suppression)
+- LoftQ (https://github.com/yxli2123/LoftQ)
+- Nucleotide Transformers (https://github.com/instadeepai/nucleotide-transformer)
