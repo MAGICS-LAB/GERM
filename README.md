@@ -32,7 +32,7 @@ The repo contains:
 
 ## 1. Introduction
 
-GERM (GEnomic adapt-Robust Model) is a genomic foundation model designed to enhance efficiency and adaptability in genomic analysis. It replaces standard attention mechanisms with an outlier-free layer inspired by associative memory models, improving low-rank adaptation and quantization robustness. Building on DNABERT-2, GERM incorporates QLoRA and LoFTQ for efficient low-rank adaptation, while integrating outlier suppression, OmniQuant, and SmoothQuant for robust quantization, enabling state-of-the-art performance and efficient deployment on resource-constrained devices.
+GERM is a genomic foundation model designed to enhance efficiency and adaptability in genomic analysis. It replaces standard attention mechanisms with an outlier-free layer inspired by associative memory models, improving low-rank adaptation and quantization robustness. Building on DNABERT-2, GERM incorporates QLoRA and LoFTQ for efficient low-rank adaptation, while integrating outlier suppression, OmniQuant, and SmoothQuant for robust quantization, enabling state-of-the-art performance and efficient deployment on resource-constrained devices.
 
 ## 2. Environment setup
 
