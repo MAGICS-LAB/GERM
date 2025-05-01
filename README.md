@@ -1,5 +1,4 @@
-# Making Genomic Foundation Models more Foundational Requires Outlier Removal: A Case Study on DNABERT-2
-
+# Fast and Low-Cost Genomic Foundation Models via Outlier Removal
 The repo contains: 
 1. **Official Implementation**  
    The official implementation of [Fast and Low-Cost Genomic Foundation Models via Outlier Removal](https://openreview.net/forum?id=oyUiJmkD7H).
