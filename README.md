@@ -2,7 +2,7 @@
 
 The repo contains: 
 1. **Official Implementation**  
-   The official implementation of [Fast and Low-Cost Genomic Foundation Models via Outlier Removal](to_be_decided).
+   The official implementation of [Fast and Low-Cost Genomic Foundation Models via Outlier Removal](https://openreview.net/forum?id=oyUiJmkD7H).
 
 2. **Quantization Adaptations**  
    Implementations of quantization methods `outlier_suppression`, `omniquant`, and `smoothquant` adapted for DNABERT-2.
