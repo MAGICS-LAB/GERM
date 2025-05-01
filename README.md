@@ -17,7 +17,7 @@ The repo contains:
 
 ## Contents
 
-- [Making Genomic Foundation Models more Foundational Requires Outlier Removal: A Case Study on DNABERT-2](#making-genomic-foundation-models-more-foundational-requires-outlier-removal-a-case-study-on-dnabert-2)
+- [Fast and Low-Cost Genomic Foundation Models via Outlier Removal](#making-genomic-foundation-models-more-foundational-requires-outlier-removal-a-case-study-on-dnabert-2)
   - [Contents](#contents)
   - [1. Introduction](#1-introduction)
   - [2. Environment setup](#2-environment-setup)
