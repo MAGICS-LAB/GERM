@@ -1,7 +1,7 @@
 # Fast and Low-Cost Genomic Foundation Models via Outlier Removal
 The repo contains: 
 1. **Official Implementation**  
-   The official implementation of [Fast and Low-Cost Genomic Foundation Models via Outlier Removal](https://openreview.net/forum?id=oyUiJmkD7H).
+   The official implementation of [Fast and Low-Cost Genomic Foundation Models via Outlier Removal](https://arxiv.org/abs/2505.00598).
 
 2. **Quantization Adaptations**  
    Implementations of quantization methods `outlier_suppression`, `omniquant`, and `smoothquant` adapted for DNABERT-2.
@@ -17,7 +17,7 @@ The repo contains:
 
 ## Contents
 
-- [Fast and Low-Cost Genomic Foundation Models via Outlier Removal](#making-genomic-foundation-models-more-foundational-requires-outlier-removal-a-case-study-on-dnabert-2)
+- [Fast and Low-Cost Genomic Foundation Models via Outlier Removal](https://arxiv.org/abs/2505.00598)
   - [Contents](#contents)
   - [1. Introduction](#1-introduction)
   - [2. Environment setup](#2-environment-setup)
