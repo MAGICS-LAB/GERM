@@ -190,7 +190,15 @@ If you use GERM in your work, please kindly cite our paper:
 **GERM**
 
 ```
-to be filled
+@misc{luo2025fastlowcostgenomicfoundation,
+      title={Fast and Low-Cost Genomic Foundation Models via Outlier Removal}, 
+      author={Haozheng Luo and Chenghao Qiu and Maojiang Su and Zhihan Zhou and Zoe Mehta and Guo Ye and Jerry Yao-Chieh Hu and Han Liu},
+      year={2025},
+      eprint={2505.00598},
+      archivePrefix={arXiv},
+      primaryClass={cs.LG},
+      url={https://arxiv.org/abs/2505.00598}, 
+}
 ```
 
 ## 8.Acknowledgement
