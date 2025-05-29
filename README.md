@@ -13,7 +13,7 @@ The repo contains:
    The official implementation of [Fast and Low-Cost Genomic Foundation Models via Outlier Removal](https://arxiv.org/abs/2505.00598).
 
 2. **Quantization Adaptations**  
-   Implementations of quantization methods `outlier_suppression`, `omniquant`, and `smoothquant` adapted for DNABERT-2.
+   Implementations of quantization methods `outlier suppression`, `omniquant`, and `smoothquant` adapted for DNABERT-2.
 
 3. **Fine-Tuning Code**  
    Fine-tuning code for DNABERT-2, including support for full fine-tuning, LoRA, and the newly added `QLoRA`, `LoftQ` methods.
@@ -27,13 +27,12 @@ The repo contains:
 ## Contents
 
 - [Fast and Low-Cost Genomic Foundation Models via Outlier Removal](https://arxiv.org/abs/2505.00598)
-  - [Contents](#contents)
   - [1. Introduction](#1-introduction)
   - [2. Environment setup](#2-environment-setup)
   - [3. Pre-Training](#3-pre-training)
   - [4. Finetune](#4-finetune)
   - [5. Quantization](#5-quantization)
-    - [5.1 outlier\_suppression](#51-outlier_suppression)
+    - [5.1 Outlier Suppression](#51-Outlier-Suppression)
     - [5.2 Smoothquant](#52-smoothquant)
     - [5.3 Omniquant](#53-omniquant)
   - [6. Evaluation](#6-evaluation)
@@ -41,7 +40,7 @@ The repo contains:
 
 ## 1. Introduction
 
-GERM is a genomic foundation model designed to enhance efficiency and adaptability in genomic analysis. It replaces standard attention mechanisms with an outlier-free layer inspired by associative memory models, improving low-rank adaptation and quantization robustness. Building on DNABERT-2, GERM incorporates QLoRA and LoFTQ for efficient low-rank adaptation, while integrating outlier suppression, OmniQuant, and SmoothQuant for robust quantization, enabling state-of-the-art performance and efficient deployment on resource-constrained devices.
+GERM is a genomic foundation model designed to enhance efficiency and adaptability in genomic analysis. It replaces standard attention mechanisms with an outlier-free layer inspired by associative memory models, improving low-rank adaptation and quantization robustness. Building on DNABERT-2, GERM incorporates QLoRA and LoFTQ for efficient low-rank adaptation, while integrating Outlier Suppression, OmniQuant, and SmoothQuant for robust quantization, enabling state-of-the-art performance and efficient deployment on resource-constrained devices.
 
 ## 2. Environment setup
 
@@ -111,7 +110,7 @@ sh finetune/scripts/loftq/run.sh
 
 Before execution, make sure to replace the model and data paths accordingly.
 
-### 5.1 outlier_suppression
+### 5.1 Outlier Suppression
 
 You can set the quantization bit-width in `config.yaml`. 
 ```
@@ -213,10 +212,10 @@ If you use GERM in your work, please kindly cite our paper:
 ## 8.Acknowledgement
 We appreciate the following GitHub repos a lot for their valuable code and efforts.
 - DNABERT-2 (https://github.com/MAGICS-LAB/DNABERT_2)
+- Nucleotide Transformers (https://github.com/instadeepai/nucleotide-transformer)
 - HyenaDNA (https://github.com/HazyResearch/hyena-dna)
-- SmoothQuant (https://github.com/mit-han-lab/smoothquant)
 - OutEffHop (https://github.com/MAGICS-LAB/OutEffHop)
+- SmoothQuant (https://github.com/mit-han-lab/smoothquant)
 - OmniQuant (https://github.com/OpenGVLab/OmniQuant)
 - Outlier Suppression (https://github.com/wimh966/outlier_suppression)
 - LoftQ (https://github.com/yxli2123/LoftQ)
-- Nucleotide Transformers (https://github.com/instadeepai/nucleotide-transformer)
