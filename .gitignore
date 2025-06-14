@@ -1,6 +1,7 @@
 data/*
 *.csv
 FT/DNABERT-2-FT/GUE
+smoothquant/torch-int/
 *.bin
 *.pyc
 # Byte-compiled / optimized / DLL files
