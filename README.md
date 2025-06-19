@@ -3,14 +3,14 @@
 
 # Fast and Low-Cost Genomic Foundation Models via Outlier Removal
 
-[![arXiv](https://img.shields.io/badge/arXiv-GERM-ff0000.svg?style=for-the-badge)](https://arxiv.org/abs/2505.00598)  [![Github](https://img.shields.io/badge/GERM-000000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/MAGICS-LAB/GERM)  [![Hugging Face Collection](https://img.shields.io/badge/HF_Assets-fcd022?style=for-the-badge&logo=huggingface&logoColor=000)](https://huggingface.co/collections/magicslabnu/germ-67f5e49e710956423d549e9b)
+[![arXiv](https://img.shields.io/badge/arXiv-GERM-ff0000.svg?style=for-the-badge)](https://openreview.net/forum?id=oyUiJmkD7H)  [![Github](https://img.shields.io/badge/GERM-000000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/MAGICS-LAB/GERM)  [![Hugging Face Collection](https://img.shields.io/badge/HF_Assets-fcd022?style=for-the-badge&logo=huggingface&logoColor=000)](https://huggingface.co/collections/magicslabnu/germ-67f5e49e710956423d549e9b)
 </div>
 
 
 
 The repo contains: 
 1. **Official Implementation**  
-   The official implementation of [Fast and Low-Cost Genomic Foundation Models via Outlier Removal](https://arxiv.org/abs/2505.00598).
+   The official implementation of [Fast and Low-Cost Genomic Foundation Models via Outlier Removal](https://openreview.net/forum?id=oyUiJmkD7H).
 
 2. **Quantization Adaptations**  
    Implementations of quantization methods `outlier suppression`, `omniquant`, and `smoothquant` adapted for DNABERT-2.
