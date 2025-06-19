@@ -3,7 +3,7 @@
 
 # Fast and Low-Cost Genomic Foundation Models via Outlier Removal
 
-[![arXiv](https://img.shields.io/badge/arXiv-GERM-ff0000.svg?style=for-the-badge)](https://openreview.net/forum?id=oyUiJmkD7H)  [![Github](https://img.shields.io/badge/GERM-000000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/MAGICS-LAB/GERM)  [![Hugging Face Collection](https://img.shields.io/badge/HF_Assets-fcd022?style=for-the-badge&logo=huggingface&logoColor=000)](https://huggingface.co/collections/magicslabnu/germ-67f5e49e710956423d549e9b)
+[![OpenReview](https://img.shields.io/badge/arXiv-GERM-ff0000.svg?style=for-the-badge)](https://openreview.net/forum?id=oyUiJmkD7H)  [![Github](https://img.shields.io/badge/GERM-000000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/MAGICS-LAB/GERM)  [![Hugging Face Collection](https://img.shields.io/badge/HF_Assets-fcd022?style=for-the-badge&logo=huggingface&logoColor=000)](https://huggingface.co/collections/magicslabnu/germ-67f5e49e710956423d549e9b)
 </div>
 
 
